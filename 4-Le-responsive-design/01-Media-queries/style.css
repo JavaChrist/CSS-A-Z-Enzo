@@ -1,0 +1,120 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: #f1f1f1;
+}
+
+p {
+  font-size: 35px;
+}
+
+/* max-width = en dessous de xxx */
+@media (max-width: 1000px) {
+  .txt-1 {
+    color: yellow;
+  }
+}
+
+/* min-width = au-dessus de xxx */
+@media (min-width: 1000px) {
+  .txt-2 {
+    color: burlywood;
+  }
+}
+
+/* height */
+@media (height: 600px) {
+  .txt-1 {
+    background: coral;
+  }
+}
+
+/* width */
+@media (width: 600px) {
+  .txt-2 {
+    background: coral;
+  }
+}
+
+/* all(défaut), screen, print */
+@media screen and (min-width: 1000px) {
+  .txt-2 {
+    background-color: lightskyblue;
+  }
+}
+@media print {
+  .txt-2 {
+    background-color: lightskyblue;
+  }
+}
+/* opérateurs and, not, ",", only */
+
+/* and pour créer des intervalles */
+@media (min-width: 500px) and (max-width: 1000px) {
+  p {
+    background-color: maroon;
+  }
+}
+/* not pour la négation */
+
+@media not (max-width: 1000px) {
+  p {
+    background: blue;
+  }
+}
+
+/* la virgule "," pour assembler plusieurs medias */
+@media (min-width: 500px), (max-width: 1000px) {
+  p {
+    background-color: maroon;
+  }
+}
+
+/* Seulement quand hover est supporté, pas en mode mobile */
+@media (hover: hover) {
+  p:hover {
+    background: yellow;
+  }
+}
+
+/* prefers-color-scheme pour le dark / light mode*/
+
+@media (perfers-color-scheme: dark) {
+  body {
+    background: #222;
+    color: #f1f1f1 !important;
+  }
+}
+
+/* coarse = grossier = petit écran(doigt) */
+
+@media (pointer: coarse) {
+  body {
+    background: lightgreen;
+  }
+}
+@media (pointer: fine) {
+  body {
+    background: orange;
+  }
+}
+
+/* Orientation du téléphone / Tablette */
+
+@media (orientation: landscape) {
+  body {
+    background: crimson;
+  }
+}
+@media (orientation: portrait) {
+  body {
+    background: lightblue;
+  }
+}

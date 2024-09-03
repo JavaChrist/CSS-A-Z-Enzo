@@ -1,0 +1,35 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* padding-top: 250px; */
+}
+
+.box {
+  background-color: teal;
+  width: 300px;
+  height: 250px;
+  padding: 15px;
+  border: 3px solid yellowgreen;
+  margin: 50px;
+}
+
+/* avec les élément inline ont peut pas donner de hauteur ou largeur, ni des margin top et bottom */
+
+span {
+  /*fonctionne pas  */
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  background-color: green;
+  /* fonctionne mais ne pousse pas les autres éléments ce supperpose*/
+  padding: 0 50px;
+  margin: 0 0px;
+}

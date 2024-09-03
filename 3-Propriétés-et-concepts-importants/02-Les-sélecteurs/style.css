@@ -1,0 +1,98 @@
+/* Sélecteur universel et simple reset */
+
+/* * a une spécifité de 0  */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Par type : p, h1, form */
+
+h1 {
+  font-size: 35px;
+  color: salmon;
+}
+
+/* Par classe / id */
+.title {
+  color: lightgreen;
+}
+
+#title {
+  color: lightblue;
+}
+
+/* Combinaison */
+.title#title {
+  color: crimson;
+}
+
+/* Sélecteurs avancés +~> */
+/* La première liste qui suit élément H1  */
+h1 + ul {
+  color: green;
+}
+
+/* Les premier enfants de ul */
+ul > li {
+  color: violet;
+}
+
+/* Tous les enfants qui suive le au même niveau le premier sélecteur */
+li ~ li {
+  background-color: yellowgreen;
+}
+
+input[type="text"] {
+  background: red;
+}
+
+a[href$=".fr"] {
+  background: rgb(136, 213, 29);
+}
+/* Les pseudo-classes de position */
+
+/* cible un enfant */
+li:nth-child(5) {
+  background: red;
+}
+
+/* Cible que parmi les éléments sité */
+li:nth-of-type(2) {
+  background: yellow;
+}
+
+/* Premier enfant */
+li:first-of-type {
+  background: green;
+}
+
+/*  Dernier enfant */
+li:last-of-type {
+  background: lightblue;
+}
+/* :not() */
+
+/* Tous les éléments de ça sélection sauf */
+li:not(:nth-of-type(3)) {
+  background: blue;
+}
+
+/* Tous les éléments de ça sélection sauf */
+li:not(.muted) {
+  background: red;
+}
+/* Petit rajout dont je ne parle pas dans la vidéo. */
+
+/* Assembler plusieurs sélections avec la virgule (,) */
+
+/* Ex : Tous les h1 ET tous les h2 ET tous les paragraphes. */
+
+h1,
+h2,
+p {
+  color: crimson;
+}

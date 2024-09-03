@@ -1,0 +1,56 @@
+p {
+  font-size: 50px;
+
+  /* margin pousse les éléments */
+  /* margin: 20px;
+  margin: 20px 20px;
+  margin: 20px 20px 20px 20px;
+
+  margin-top: 2px;
+  margin-right: 200px;
+  margin-bottom: 99px; 
+  margin-left: 100px; */
+
+/* padding remplissage */
+ background-color: aqua;
+/*padding: 80px;
+padding: 60px 20px 30px 40px;
+padding-top: 60px;
+padding-right: 20px;
+padding-bottom: 30px;
+padding-left: 40px; */
+
+/* Border */
+border-width: 3px;
+
+border-style: solid;
+border-color: crimson;
+border: 3px solid crimson;
+
+
+/* border-radius */
+/* Si la valeur du radius est > à la moitier de l'éléments alors un arrondi entre le haut et le bas */
+/* border-radius: 25px; */
+
+/* border-radius: 5px 20px 15px 50px; */
+
+
+}
+/* 2 type d'éléments bloc (prend toute la largeur de la page) */
+/* La largeur des éléments inline correspont à leur contenu, ils ne prennent pas  */
+/* toute la largeur comme les blocs */
+/* les éléments se mettent les uns à la suite des autres  */
+
+
+span {
+  background: green;
+  font-size: 25px;
+  
+  /* Le padding top et bottom des éléments inline ne poussent pas les autres éléments inline ou block. */
+  padding: 0px 30px;
+
+  /* Margin top et bottom ne fonctionne pas avec les éléments inline */
+  margin: 50px 25px;
+
+}
+

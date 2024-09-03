@@ -1,0 +1,41 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 150px;
+}
+
+.grid {
+  background: #f4ecce;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: grid;
+  grid-gap: 5px;
+  /* grid-template-columns: max-content 200px min-content; */
+  grid-template-columns: 1fr minmax(500px, 1fr);
+  /* ce partage l'écran  */
+}
+
+.item {
+  border: 1px solid #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bolder;
+  background: royalblue;
+  color: #f1f1f1;
+}
+
+/* max-contente longeur du contenue */
+/* min-content longeur du mot le plus long  */
+
+/* grid-template-columns: 1fr minmax(500px, 1fr); */
+/* Définit une taille entre une valeur minimale et maximale, 
+   avec une partie fixe et l'autre qui se rétrécit en responsive */

@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.animated-link {
+  display: inline-block;
+  background: #111;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.animated-link span {
+  display: inline-block;
+  background: #ff90e8;
+  color: #111;
+  border: 1px solid #111;
+  padding: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transform: 0.15s ease-out, background-color 0.15s ease-out;
+}
+
+.animated-link:hover span {
+  transform: translate(6px, -6px);
+  background: #fbe94c;
+}

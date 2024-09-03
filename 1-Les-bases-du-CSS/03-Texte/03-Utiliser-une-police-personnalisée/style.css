@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Kitahara";
+  src: url(./fonts/KitaharaScript.otf), url(./fonts/KitaharaScript.ttf);
+}
+
+h1 {
+  font-family: Kitahara, sans-serif;
+  font-size: 160px;
+  color: cadetblue;
+  text-align: center;
+  font-weight: 100;
+}

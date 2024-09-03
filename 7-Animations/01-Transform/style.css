@@ -1,0 +1,36 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: orangered;
+
+  /* déplacement sur x & y  */
+  /* transform: translate(900px, 400px); */
+
+  /* Agrandir sur x & y ou les deux  */
+  /* transform: scale(2);   */
+
+  /* rotation voir insperter outil de test  */
+  /* transform: rotate(45deg);  */
+
+  /* Distortion */
+  /* transform: skew(30deg); */
+
+  /* Combiner plusieurs valeurs attention a l'ordre */
+  /* transform: translate(800px, 400px) rotate(30deg); */
+
+  /* Mouvement depuis un point sur l"élément  */
+  /* transform: rotate(205deg); */
+  /* transform-origin: 100% 100%; */
+}

@@ -1,0 +1,24 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover; /*empêche la déformation de l'image*/
+  object-position: center; /* permet de positionné le contenu de l'image */
+}
+
+.hero-section {
+  height: 100vh;
+  /* background-color: coral;
+  background-image: url("./images/nature.jpg");
+  background-image: url("./images/laptop.jpg");
+  background-position: center; permet de positionné le contenu de l'image selon l'écran
+  background-size: cover; Bien s'adapter aux dimentions
+  background-repeat: no-repeat; */
+  background: coral url("./images/laptop.jpg") center / cover no-repeat;
+  /* Raccourcit protiete bakground, un / obligatoire entre center et cover car confli  */
+}

@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 140px;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  perspective: 2000px;
+  /* Donner une profondeur aux enfants d'un élément zt de pouvoir l'utiliser*/
+  margin: 0 auto;
+  border: 3px dashed red;
+  position: relative;
+  transform-style: preserve-3d;
+  /* a c'est élément d'être dans le même contexte 3D de pouvoir avoir des intersections */
+}
+
+.plane {
+  position: absolute;
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  height: 100%;
+}
+
+.p-1 {
+  background: blue;
+  transform: rotateY(45deg);
+}
+
+.p-2 {
+  background: green;
+  transform: rotateX(45deg);
+  /* transform: translateZ(500px); */
+}

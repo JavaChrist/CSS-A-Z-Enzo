@@ -1,0 +1,39 @@
+body {
+  background-color: #333;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+
+/* les couleurs   */
+
+/* named color */
+background-color: salmon;
+
+
+/* red green blue (RGB) */
+background-color: rgb(250, 128, 114);
+
+/* red green blue alpha opacity (RGBa) */
+
+background-color: rgba(250, 128, 114, 0.3);
+
+/* hexadecimal */
+/* [0-9] [a-f] */
+background-color: #fa8072;
+
+/* HSL (hue, saturation, lightness)*/
+background-color: hsl(6, 93%, 71%);
+box-shadow:0 5px 5px rgba(0, 0, 0, 0.3);
+border: 3px solid blue;
+}
+
+
+/* En hexadecimal # et 6 chiffre ou lettre  */
+/* quand il se répéte 3 sufise #000000 ou #000 pour le noir, #ffffff ou #fff pour le blanc */
+h1 {
+color: #000000;
+
+
+}

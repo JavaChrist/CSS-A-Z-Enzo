@@ -1,0 +1,63 @@
+body {
+  background-color: #333;
+  height: 2500px;
+}
+
+/* Exemple 1. */
+
+.box {
+  width: 150px;
+  height: 150px;
+  /* Valeur de base position: static élément non positionner */
+  /* positionnement par raport à son endroit dans le flot */
+}
+
+.b1 {
+  background-color: crimson;
+  position: relative; /* 5 attribus lerf, right, top, button */
+  /* position relative a son parent positionner ou la fenetre de l'écran*/
+
+  /* left: 250px; */
+  /* top: 100px; */
+}
+
+.b2 {
+  background-color: yellowgreen;
+  position: absolute;
+}
+
+.b3 {
+  background-color: skyblue;
+  position: fixed;
+  right: 0;
+  /* positionnement fixe par raport à la fenêtre  */
+}
+
+.b4 {
+  background-color: cornsilk;
+  position: sticky;
+  top: 0;
+  /* l'hors ce que le haut du parent va toucher le haut de notre élément  */
+}
+
+.b5 {
+  background-color: coral;
+}
+
+/* Exemple 2. */
+
+.parent {
+  width: 200px;
+  height: 200px;
+  background-color: thistle;
+  position: relative;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  background: crimson;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

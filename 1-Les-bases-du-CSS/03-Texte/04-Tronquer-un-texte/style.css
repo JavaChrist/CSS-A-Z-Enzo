@@ -1,0 +1,13 @@
+body {
+  background: #222;
+}
+
+p {
+  margin: 100px auto 0;
+  color: #f1f1f1;
+  font-size: 24px;
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden; /* Cache ce qui depasse*/
+  text-overflow: ellipsis;
+}

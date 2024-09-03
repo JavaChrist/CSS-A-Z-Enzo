@@ -1,0 +1,67 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  height: 150px;
+  font-size: 45px;
+  margin-bottom: 20px;
+  background: crimson;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenu */
+
+.percentage {
+  width: 60%;
+}
+/* % référence au parent  */
+
+.pixels {
+  width: 400px;
+}
+
+.vw {
+  width: 50vw;
+  width: 90vmin; /* Par raport au côté le plus petit */
+  width: 20vmax; /* Par raport au côté le plus grand */
+}
+/* Par rapport à la fenêtre  */
+
+.vh {
+  width: 100vh;
+
+  /* Par raport a la fenêtre */
+}
+
+.pixel-txt {
+  font-size: 50px;
+}
+
+/* em par raport a la valeur du parent */
+
+.parent {
+  font-size: 20px;
+}
+
+/* Fonction à la taille d'écriture de l"élément racine parent  */
+.shild {
+  font-size: 2em;
+}
+
+/* Fonction à la taille d'écriture de l"élément racine  */
+.rem {
+  size: 2rem;
+}

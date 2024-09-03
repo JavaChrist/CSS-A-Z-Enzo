@@ -1,0 +1,87 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 150px;
+}
+
+.flex-container {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 400px;
+  background: wheat;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+}
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background: crimson;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 35px;
+  color: #f1f1f1;
+  font-weight: bold;
+  /* Comportement de base, s'étire sur le cross-axis */
+  /* align-self: stretch; */
+
+  /* Flex-grow */
+  /* Distrubue l'espace restant */
+  /* De base flex-grow: 0 */
+  /* flex-grow: 1; */
+
+  /* flex-shrink: 1; */
+  /* Gère le rétrécissement */
+  /* De base sur 1 */
+
+  /* Un partage selon ces besoins flex-grow  */
+  /* .item-1 {
+    flex-grow: 1;
+    }
+    .item-2 {
+  flex-grow: 10;
+  }
+  .item-3 {
+  flex-grow: 1;
+  } */
+  /* ou  */
+  /* On donne des width à un ou plusieurs items et le reste pour celui restant */
+  /* .item-1 {
+  width: 200px;
+  }
+  .item-2 {
+  width: 50px;
+  }
+  .item-3 {
+  flex-grow: 1;
+  } */
+
+  /* flex-basis */
+  /* Gère la taille sur le main-axis  */
+  /* En row la largeur en columm devient la  hauteur */
+
+  /* Proprièté raccourcis: grow - shrink - basis  */
+  /* flex: 1 0 auto; */
+}
+
+.item-1 {
+  /* width: 80px; */
+  order: 3;
+}
+.item-2 {
+  /* width: 125px; */
+  order: 1;
+}
+.item-3 {
+  /* width: 100px; */
+  order: 2;
+}

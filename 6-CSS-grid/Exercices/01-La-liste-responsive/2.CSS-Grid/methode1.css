@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f1f1f1;
+  padding: 140px 0 100px;
+}
+
+/* Méthode 1 conventionnel */
+
+.gallery {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.gallery li {
+  list-style-type: none;
+}
+
+.gallery li img {
+  width: 100%;
+}
+
+@media (max-width: 540px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

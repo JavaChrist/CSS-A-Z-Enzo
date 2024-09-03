@@ -1,0 +1,34 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: red;
+}
+
+button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+.card {
+  color: green;
+  padding: 20px;
+}
+
+.card p {
+  padding: inherit;
+  /* *Faire hériter */
+  color: initial;
+  /* Prend la valeurinitiale de la proprièté */
+}
+
+a {
+  color: coral;
+}
+
+/* L'héritage en CSS est un mécanisme qui détermine comment les propriétés CSS se transmettent des éléments parents aux éléments enfants.
+
+Certaines propriétés CSS sont automatiquement héritées des éléments parents par les éléments enfants. Par exemple, les propriétés comme color, font-family, et line-height sont héritées par défaut. 
+Cela signifie que si tu définis color: red sur un élément parent, ses enfants auront aussi cette couleur rouge.
+
+Cependant, toutes les propriétés ne sont pas héritées. Par exemple, des propriétés comme margin, padding, ou background ne sont pas héritées par défaut.
+
+La valeur inherit est une option que tu peux appliquer à n'importe quelle propriété CSS pour forcer un élément à hériter cette propriété de son parent, même si ce n'est pas une propriété héritée par défaut. */

@@ -1,0 +1,53 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #222;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  margin: 100px auto 0;
+  background-color: lightblue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  /* transition: background-color 0.4s ease-in-out; */
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  /* background-color: crimson; */
+}
+
+/* animation preformante  */
+/* créer un speudo élément qui vient ce positionné sur le parent */
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: -1;
+  transition: opacity 0.2s ease-out;
+  background-color: crimson;
+  opacity: 0;
+}
+
+.card:hover::after {
+  opacity: 1;
+}

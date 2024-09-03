@@ -1,0 +1,63 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+  padding-top: 140px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: orangered;
+  /* animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; Force la position de l'animation
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: paused; */
+  animation: spin 2s ease-in-out infinite;
+}
+
+/* @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* ou */
+
+/* @keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* Ou encore  */
+/* 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* Attention quand on termisne une animation (100%) et son dernier breckPoint n'ait pas ça position de départ, on reviens a la valeur initiale.  */
+/* Pour l'obliger de la laissé dans cette position a 100%: utilise (animation-fill-mode: forwards;)  */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

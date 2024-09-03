@@ -1,0 +1,24 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+  background: blueviolet;
+}
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box {
+  height: 200px;
+  width: 80px;
+}
+
+.box-1 {
+  background: crimson;
+  float: left;
+}
+.box-2 {
+  background: turquoise;
+  float: right;
+}

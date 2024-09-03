@@ -1,0 +1,52 @@
+body {
+  background-color: #333;
+  color: cornsilk;
+}
+
+/* Titre */
+h1 {
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+/* Lien */
+a {
+  color: #f1f1f1;
+  text-decoration: none;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 10px;
+  cursor: pointer;
+  background: green;
+}
+/* Paragraphe */
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  max-width: 600px;
+  margin: 0 auto;
+  /* A eviter text-alin:justify quand il y a beaucoup de texte */
+  text-align: justify;
+}
+/* Listes */
+ul {
+  /* list-style-type: "hello";
+  list-style-image: url("./ressources/basketball.svg");
+  list-style-position: outside; */
+  list-style: "hello" url("./ressources/basketball.svg") inside;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+ul li {
+  padding-left: 20px;
+}
+
+li::marker {
+  font-size: 30px;
+}
