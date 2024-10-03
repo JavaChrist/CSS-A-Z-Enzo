@@ -1,0 +1,39 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 75px;
+}
+
+img {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.filtered-img {
+
+  filter: blur(2px);
+filter: brightness(50%);
+filter: contrast(200%);
+filter: grayscale(100%);
+filter: invert(100%);
+filter: opacity(25%);
+filter: sepia(100%0);
+filter: hue-rotate(250deg);
+filter: drop-shadow(26px 16px 20px red);
+filter: drop-shadow(26px 16px 20px red) invert(75%) blur(2px);
+}
+
+.png-sax {
+  
+  filter: drop-shadow(26px 16px 20px red);
+}
+
+.svg-sax {
+  
+  filter: drop-shadow(26px 16px 20px red);
+}
